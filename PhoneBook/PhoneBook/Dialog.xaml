@@ -1,0 +1,21 @@
+﻿<ContentDialog
+    x:Class="PhoneBook.Dialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PhoneBook"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Add new Data"
+    PrimaryButtonText="OK"
+    SecondaryButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+
+    <Grid>
+        <TextBox x:Name="InformationItemNameTextBox" HorizontalAlignment="Left" Margin="93,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167"/>
+        <TextBox x:Name="InformationItemContentTextBox" HorizontalAlignment="Left" Margin="93,47,0,-5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167"/>
+        <TextBlock x:Name="InformationItemNameTextBlock" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="32" Width="65"/>
+        <TextBlock x:Name="InformationItemContentTextBlock" HorizontalAlignment="Left" Margin="3,47,0,0" TextWrapping="Wrap" Text="Content" VerticalAlignment="Top" Height="37"/>
+    </Grid>
+</ContentDialog>
